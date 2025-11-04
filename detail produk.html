@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detail Produk - Catalog PoppyPlaytime.com</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', fantasy, sans-serif;
+      background-color: #000066;
+      color: #FFFFFF;
+      text-align: center;
+    }
+
+    header {
+      background-color: #990000;
+      padding: 15px 0;
+      font-size: 30px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    /* MENU NAVBAR */
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #000066;
+      gap: 40px;
+      padding: 15px 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #FFFFFF;
+      font-weight: bold;
+      font-family: fantasy;
+      font-size: 18px;
+      padding: 10px 20px;
+      border-radius: 8px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #990000;
+      color: #FFFFFF;
+    }
+
+    h1 {
+      font-size: 40px;
+      margin-top: 30px;
+      font-family: fantasy;
+      letter-spacing: 1px;
+    }
+
+    .product-detail {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 40px;
+      flex-wrap: wrap;
+      margin: 50px auto;
+      max-width: 1000px;
+      background-color: #000066;
+      border: 3px solid #990000;
+      border-radius: 12px;
+      padding: 30px;
+      box-shadow: 0 0 20px #111166;
+    }
+
+    .product-detail img {
+      width: 350px;
+      height: auto;
+      border: 3px solid #990000;
+      border-radius: 12px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .product-detail img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px #990000;
+    }
+
+    .product-info {
+      max-width: 500px;
+      text-align: left;
+      font-family: fantasy;
+      line-height: 1.7;
+    }
+
+    .product-info h2 {
+      font-size: 30px;
+      color: #FFFFFF;
+      margin-bottom: 10px;
+    }
+
+    .price {
+      background-color: #990000;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 8px;
+      font-size: 22px;
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+
+    .description {
+      font-size: 18px;
+      color: #FFFFFF;
+      margin-bottom: 20px;
+    }
+
+    .specs {
+      background-color: #111166;
+      border: 2px solid #990000;
+      border-radius: 10px;
+      padding: 15px;
+      margin-bottom: 20px;
+    }
+
+    .specs ul {
+      list-style: none;
+      padding-left: 0;
+      margin: 0;
+    }
+
+    .specs li {
+      margin: 6px 0;
+    }
+
+    .buy-btn {
+      display: inline-block;
+      background-color: #990000;
+      color: #FFFFFF;
+      text-decoration: none;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-size: 18px;
+      font-weight: bold;
+      transition: background-color 0.3s, transform 0.2s;
+    }
+
+    .buy-btn:hover {
+      background-color: #cc0000;
+      transform: scale(1.05);
+    }
+
+    footer {
+      margin-top: 60px;
+      padding: 20px;
+      font-size: 14px;
+      background-color: #111166;
+      font-family: fantasy;
+      letter-spacing: 0.5px;
+    }
+
+    .nav-products {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .nav-products a {
+      text-decoration: none;
+      color: #FFFFFF;
+      background-color: #990000;
+      padding: 10px 20px;
+      border-radius: 8px;
+      transition: background-color 0.3s;
+    }
+
+    .nav-products a:hover {
+      background-color: #cc0000;
+    }
+  </style>
+</head>
+
+<body>
+  <header>DETAIL PRODUK</header>
+
+  <nav>
+    <a href="index.html">HALAMAN UTAMA</a>
+    <a href="shoping guide.html">SHOPPING GUIDE</a>
+    <a href="catalog.html">CATALOG</a>
+    <a href="#">PROFIL</a>
+  </nav>
+
+  <h1>PoppyPlaytime.com</h1>
+
+  <!-- PRODUK 1: CatNap -->
+  <div class="product-detail">
+    <img src="../imagescatnap.jpg" alt="CatNap">
+    <div class="product-info">
+      <h2>CatNap Plush Toy</h2>
+      <div class="price">Rp 350.000.000</div>
+      <p class="description">
+        Boneka <strong>CatNap</strong> dari seri <em>Smiling Critters</em> adalah karakter lucu namun misterius dari dunia Poppy Playtime.
+        Terbuat dari bahan halus premium dengan desain autentik seperti di game aslinya.
+      </p>
+      <div class="specs">
+        <ul>
+          <li>?? <strong>Bahan:</strong> Kain lembut + isi dakron premium</li>
+          <li>?? <strong>Ukuran:</strong> ±30 cm</li>
+          <li>?? <strong>Warna:</strong> Ungu gelap dengan detail bordir</li>
+          <li>?? <strong>Kelengkapan:</strong> Kotak kolektor resmi</li>
+          <li>?? <strong>Status:</strong> Tersedia (Limited Edition)</li>
+        </ul>
+      </div>
+      <a href="#" class="buy-btn">?? Beli Sekarang</a>
+    </div>
+  </div>
+
+  <!-- PRODUK 2: DogDay -->
+  <div class="product-detail">
+    <img src="../dogday.jpg" alt="DogDay">
+    <div class="product-info">
+      <h2>DogDay Plush Toy</h2>
+      <div class="price">Rp 300.000.000</div>
+      <p class="description">
+        <strong>DogDay</strong> si anjing ceria namun menyeramkan hadir dalam bentuk boneka eksklusif.  
+        Didesain untuk kolektor sejati penggemar Poppy Playtime.
+      </p>
+      <div class="specs">
+        <ul>
+          <li>?? <strong>Bahan:</strong> Kain lembut halus dengan detail bordir</li>
+          <li>?? <strong>Ukuran:</strong> ±28 cm</li>
+          <li>?? <strong>Warna:</strong> Cokelat pastel dan putih</li>
+          <li>?? <strong>Kelengkapan:</strong> Sertifikat kolektor</li>
+          <li>?? <strong>Status:</strong> Stok Terbatas</li>
+        </ul>
+      </div>
+      <a href="#" class="buy-btn">?? Beli Sekarang</a>
+    </div>
+  </div>
+
+  <!-- PRODUK 3: Michael Afton -->
+  <div class="product-detail">
+    <img src="../mafton.jpg" alt="Michael Afton">
+    <div class="product-info">
+      <h2>Michael Afton Figure</h2>
+      <div class="price">Rp 250.000.000</div>
+      <p class="description">
+        Figur <strong>Michael Afton</strong> dari dunia horor FNaF hadir dengan detail tinggi dan sentuhan eksklusif edisi kolektor.
+      </p>
+      <div class="specs">
+        <ul>
+          <li>?? <strong>Bahan:</strong> Resin detail tinggi</li>
+          <li>?? <strong>Tinggi:</strong> ±20 cm</li>
+          <li>?? <strong>Finishing:</strong> Cat matte dengan detail luka</li>
+          <li>?? <strong>Kelengkapan:</strong> Display base edisi spesial</li>
+          <li>?? <strong>Status:</strong> SOLD OUT</li>
+        </ul>
+      </div>
+      <a href="#" class="buy-btn">? Tidak Tersedia</a>
+    </div>
+  </div>
+
+  <div class="nav-products">
+    <a href="index.html">? Kembali ke Halaman Utama</a>
+    <a href="shoping guide.html">?? Shopping Guide</a>
+  </div>
+
+  <footer>&copy; 2025 PoppyPlaytime.com | Designed by Princess.Enwet</footer>
+</body>
+</html>

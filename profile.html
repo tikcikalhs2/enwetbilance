@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Halaman Utama Efek Berdarah</title>
+<style type="text/css">
+body {
+  background-color: #000066;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: fantasy;
+}
+
+/* Warna dan gaya teks */
+.style6 { color: #FFFFFF; font-family: fantasy; }
+.style7 { color: #FFFFFF; font-size: 36px; font-weight: bold; }
+.style14 { font-family: fantasy; font-size: 18px; color: #FFFFFF; }
+.style17 { color: #000000; font-family: fantasy; }
+.style18 { color: #000000 }
+.style19 { font-size: 24px; font-weight: bold; }
+.style20 { color: #FFFFFF; font-size: 24px; font-weight: bold; }
+.style21 { font-size: 24px }
+.style22 { color: #FFFFFF; font-size: 18px; font-weight: bold; }
+
+/* Efek percikan merah */
+.splash {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: red;
+  border-radius: 50%;
+  pointer-events: none;
+  opacity: 0.8;
+  animation: splashMove 0.6s ease-out forwards;
+}
+
+@keyframes splashMove {
+  0% { transform: scale(1); opacity: 0.9; }
+  100% { transform: scale(20); opacity: 0; }
+}
+
+/* Setiap area merah jadi tombol interaktif */
+.red-click {
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.red-click:active {
+  transform: scale(0.96);
+  box-shadow: inset 0 0 12px rgba(255,0,0,0.6);
+}
+</style>
+</head>
+
+<body>
+<div align="center">
+  <!-- HEADER -->
+  <table width="990" height="36" border="1" bordercolor="#000066" bgcolor="#000066">
+    <tr>
+      <td width="234" height="30" bgcolor="#FFFFFF"><div align="center"><span class="style6">H<span class="style18">ALAMAN UTAMA</span></span></div></td>
+      <td width="245" bordercolor="#990000" bgcolor="#FFFFFF"><div align="center"><span class="style17">SHOPING GUIDE</span></div></td>
+      <td width="241" bordercolor="#FFFFFF" bgcolor="#FFFFFF"><div align="center"><span class="style17">CATALOG</span></div></td>
+      <td width="242" class="red-click" bgcolor="#990000"><div align="center"><span class="style6">PROFIL</span></div></td>
+    </tr>
+  </table>
+
+  <!-- Judul -->
+  <p class="style7">PoppyPlaytime.COM</p>
+
+  <!-- Banner -->
+  <table width="994" height="371" border="1" bordercolor="#000066" bgcolor="#000066">
+    <tr>
+      <td width="984" height="365"><img src="img/banner poppyplaytime.png" width="985" height="367" /></td>
+    </tr>
+  </table>
+
+  <!-- Bagian Profil -->
+  <p>&nbsp;</p>
+  <table width="1097" height="42" border="1" bordercolor="#000066" bgcolor="#000066">
+    <tr>
+      <td width="1087" bordercolor="#990000" bgcolor="#990000" class="red-click">
+        <div align="center" class="style19">Profile Pembuat</div>
+      </td>
+    </tr>
+  </table>
+
+  <p>&nbsp;</p>
+  <table width="574" height="525" border="1">
+    <tr>
+      <td width="564" height="519"><img src="../pancake-recipe.jpg" width="564" height="515" /></td>
+    </tr>
+  </table>
+  <p class="style20">Nama : Endwaith Salsabilla Luqyanto</p>
+  <p class="style20">Kelas : 9C Sembilan Ce</p>
+  <p class="style20">Status : Pelajar SMPS Islam Cikal Harapan 2</p>
+
+  <!-- Bagian Kata Enwet -->
+  <p>&nbsp;</p>
+  <table width="1097" height="42" border="1" bordercolor="#000066" bgcolor="#000066">
+    <tr>
+      <td width="1087" bordercolor="#990000" bgcolor="#990000" class="red-click">
+        <div align="center" class="style19">Kata Enwet diulang</div>
+      </td>
+    </tr>
+  </table>
+
+  <p class="style22">
+    Untuk tugas TIK yaitu membuat prototype Toko Online TIK menggunakan DreamWeaver...
+  </p>
+</div>
+
+<!-- SCRIPT untuk efek percikan -->
+<script>
+document.addEventListener('click', function(e) {
+  // hanya aktif kalau klik di area merah (class red-click)
+  let target = e.target.closest('.red-click');
+  if (!target) return;
+
+  // buat elemen percikan
+  for (let i = 0; i < 8; i++) {
+    const splash = document.createElement('div');
+    splash.className = 'splash';
+    document.body.appendChild(splash);
+
+    const x = e.pageX + (Math.random() - 0.5) * 50;
+    const y = e.pageY + (Math.random() - 0.5) * 50;
+    splash.style.left = `${x}px`;
+    splash.style.top = `${y}px`;
+
+    // hapus setelah animasi selesai
+    setTimeout(() => splash.remove(), 600);
+  }
+});
+</script>
+</body>
+</html>

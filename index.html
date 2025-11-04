@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PoppyPlaytime.com - Halaman Utama</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', fantasy, sans-serif;
+      background-color: #000066;
+      color: #FFFFFF;
+      text-align: center;
+    }
+
+    header {
+      background-color: #990000;
+      padding: 15px 0;
+      font-size: 30px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    /* MENU NAVBAR */
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #000066;
+      gap: 40px;
+      padding: 15px 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #FFFFFF;
+      font-weight: bold;
+      font-family: fantasy;
+      font-size: 18px;
+      padding: 10px 20px;
+      border-radius: 8px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #990000;
+      color: #FFFFFF;
+    }
+
+    h1 {
+      font-size: 40px;
+      margin-top: 30px;
+      font-family: fantasy;
+      letter-spacing: 1px;
+    }
+
+    .banner img {
+      width: 100%;
+      max-width: 985px;
+      height: auto;
+      border: 4px solid #000066;
+      margin-top: 20px;
+    }
+
+    .section-title {
+      background-color: #990000;
+      color: white;
+      font-size: 22px;
+      padding: 10px;
+      margin: 40px auto;
+      width: 80%;
+      border-radius: 10px;
+      font-family: fantasy;
+    }
+
+    h2 {
+      font-family: fantasy;
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    .product-list {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin: 30px 0;
+    }
+
+    .product {
+      background-color: #000066;
+      border: 3px solid #990000;
+      border-radius: 12px;
+      width: 300px;
+      overflow: hidden;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .product:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px #990000;
+    }
+
+    .product img {
+      width: 100%;
+      height: auto;
+      border-bottom: 3px solid #990000;
+    }
+
+    .product-name {
+      font-size: 22px;
+      margin: 10px 0;
+      font-family: fantasy;
+    }
+
+    .price {
+      background-color: #990000;
+      color: white;
+      padding: 8px;
+      font-size: 18px;
+      font-family: fantasy;
+    }
+
+    footer {
+      margin-top: 60px;
+      padding: 20px;
+      font-size: 14px;
+      background-color: #111166;
+      font-family: fantasy;
+      letter-spacing: 0.5px;
+    }
+
+  </style>
+</head>
+
+<body>
+  <header>HALAMAN UTAMA</header>
+
+  <nav>
+    <a href="#">SHOPPING GUIDE</a>
+    <a href="#">CATALOG</a>
+    <a href="#">PROFIL</a>
+  </nav>
+
+  <h1>PoppyPlaytime.com</h1>
+
+  <div class="banner">
+    <img src="img/banner poppyplaytime.png" alt="Banner Poppy Playtime">
+  </div>
+
+  <div class="section-title">Best Seller (Limited Edition Only)</div>
+  <h2>Smiling Critters +idkdedbodi</h2>
+
+  <div class="product-list">
+    <div class="product">
+      <img src="../imagescatnap.jpg" alt="CatNap">
+      <div class="product-name">CatNap</div>
+      <div class="price">Rp 350.000</div>
+    </div>
+    <div class="product">
+      <img src="../dogday.jpg" alt="DogDay">
+      <div class="product-name">DogDay</div>
+      <div class="price">Rp 300.000</div>
+    </div>
+    <div class="product">
+      <img src="../mafton.jpg" alt="Michael Afton">
+      <div class="product-name">Michael Afton (SOLD OUT)</div>
+      <div class="price">Rp 250.000</div>
+    </div>
+  </div>
+
+  <footer>&copy; 2025 PoppyPlaytime.com | Designed by Nunung</footer>
+</body>
+</html>
